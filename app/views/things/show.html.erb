@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @thing.name %>
+</p>
+
+<p>
+  <b>After save field:</b>
+  <%=h @thing.after_save_field %>
+</p>
+
+
+<%= link_to 'Edit', edit_thing_path(@thing) %> |
+<%= link_to 'Back', things_path %>
