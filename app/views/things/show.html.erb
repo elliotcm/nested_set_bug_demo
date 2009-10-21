@@ -4,8 +4,10 @@
 </p>
 
 <p>
-  <b>After save field:</b>
-  <%=h @thing.after_save_field %>
+  <b>Descendants:</b>
+  <%- @thing.descendants.each do |thing| %>
+    <%= thing.name %>
+  <% end %>
 </p>
 
 
